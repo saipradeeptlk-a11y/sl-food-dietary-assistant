@@ -44,7 +44,10 @@ const townToProvince = Object.fromEntries(
 );
 
 function findRelevantDishes(message) {
-    const lowerMsg = message.toLowerCase();
+    const lowerMsg = message.toLowerCase().trim();
+
+    // Too short to meaningfully match anything — skip straight to "not found"
+    if (lowerMsg.length < 3) return [];
 
     // 1a. Try exact substring match first (handles correctly-spelled names in longer sentences)
     const exactMatches = dishes.filter(dish =>
@@ -53,13 +56,16 @@ function findRelevantDishes(message) {
     );
     if (exactMatches.length > 0) return exactMatches.slice(0, 3);
 
-    // 1b. Fall back to fuzzy matching only if no exact match (catches typos)
-    const fuzzyMatches = fuse.search(message).map(r => r.item).slice(0, 3);
+    // 1b. Fall back to fuzzy matching only if no exact match, and only accept confident matches
+    const fuzzyMatches = fuse.search(message)
+        .filter(r => r.score < 0.3)
+        .map(r => r.item)
+        .slice(0, 3);
     if (fuzzyMatches.length > 0) return fuzzyMatches;
 
     // 2. Fall back to dietary/category filtering for browse-style questions
     if (lowerMsg.includes('vegan')) {
-        return dishes.filter(d => d.dietary_tags.vegan === true).slice(0, 10);// top 10 only 
+        return dishes.filter(d => d.dietary_tags.vegan === true).slice(0, 10);
     }
     if (lowerMsg.includes('vegetarian')) {
         return dishes.filter(d => d.dietary_tags.vegetarian === true).slice(0, 10);
@@ -119,7 +125,12 @@ router.post('/', async (req, res) => {
         const systemPrompt = `You are a food guide for tourists in Sri Lanka. You must ONLY use the dish data provided below — never guess or use outside knowledge about ingredients or safety.
 
 Respond ONLY with valid JSON in this exact format, no extra text:
-{"reply": string, "safety": "safe"|"check_with_restaurant"|"unsafe"|"unknown", "tags": string[], "ask_the_waiter": string[]}
+{
+  "reply": "<a natural, conversational sentence answering the user's question — never a status keyword>",
+  "safety": "<exactly one of: safe, check_with_restaurant, unsafe, unknown>",
+  "tags": ["<short ingredient/allergen tags, e.g. contains_fish>"],
+  "ask_the_waiter": ["<questions the user could ask restaurant staff>"]
+}
 
 Dish data:
 ${JSON.stringify(trimmedDishes, null, 2)}`;
@@ -136,7 +147,18 @@ ${JSON.stringify(trimmedDishes, null, 2)}`;
 
         const parsed = JSON.parse(completion.choices[0].message.content);
 
-        return res.json({ ...parsed, matched: true });
+        const validSafetyValues = ['safe', 'check_with_restaurant', 'unsafe', 'unknown'];
+
+        const safeResponse = {
+            reply: (typeof parsed.reply === 'string' && !validSafetyValues.includes(parsed.reply.trim()))
+                ? parsed.reply
+                : "I couldn't generate a clear answer for that — please ask your server directly to be safe.",
+            safety: validSafetyValues.includes(parsed.safety) ? parsed.safety : 'unknown',
+            tags: Array.isArray(parsed.tags) ? parsed.tags : [],
+            ask_the_waiter: Array.isArray(parsed.ask_the_waiter) ? parsed.ask_the_waiter : []
+        };
+
+        return res.json({ ...safeResponse, matched: true });
 
     } catch (err) {
         console.error('Chat route error:', err);
