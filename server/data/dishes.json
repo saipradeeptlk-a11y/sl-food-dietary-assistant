@@ -1,0 +1,1756 @@
+[
+    {
+        "id": "parippu-dhal-curry",
+        "name": "Parippu (Dhal Curry)",
+        "region": [
+            "all"
+        ],
+        "category": "vegan",
+        "ingredients": [
+            "red lentils",
+            "coconut milk",
+            "turmeric",
+            "onion",
+            "curry leaves",
+            "mustard seeds"
+        ],
+        "dietary_tags": {
+            "vegetarian": true,
+            "vegan": true,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "A staple side dish, almost always vegan by default across Sri Lanka.",
+        "ask_the_waiter": [
+            "Is this cooked with only coconut milk, no dairy or ghee added?"
+        ],
+        "restaurants": [
+            {
+                "name": "Upali's",
+                "location": "Colombo"
+            },
+            {
+                "name": "Curry Pot",
+                "location": "Colombo"
+            }
+        ]
+    },
+    {
+        "id": "gotu-kola-sambol",
+        "name": "Gotu Kola Sambol",
+        "region": [
+            "all"
+        ],
+        "category": "vegan",
+        "ingredients": [
+            "gotu kola leaves",
+            "grated coconut",
+            "lime",
+            "onion",
+            "chili"
+        ],
+        "dietary_tags": {
+            "vegetarian": true,
+            "vegan": true,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "A fresh herbal salad, reliably vegan.",
+        "ask_the_waiter": [],
+        "restaurants": [
+            {
+                "name": "Barefoot Cafe",
+                "location": "Colombo"
+            }
+        ]
+    },
+    {
+        "id": "pol-sambol",
+        "name": "Pol Sambol (Coconut Sambol)",
+        "region": [
+            "all"
+        ],
+        "category": "check_with_restaurant",
+        "ingredients": [
+            "grated coconut",
+            "chili",
+            "onion",
+            "lime",
+            "dried Maldive fish (traditional)"
+        ],
+        "dietary_tags": {
+            "vegetarian": "check_with_restaurant",
+            "vegan": "check_with_restaurant",
+            "contains_fish": true,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "Traditional recipes usually include dried Maldive fish flakes, which are easy to miss visually. Some households and restaurants offer a fish-free version.",
+        "ask_the_waiter": [
+            "Does your pol sambol contain dried fish (Maldive fish)?",
+            "Do you have a fish-free version?"
+        ],
+        "restaurants": [
+            {
+                "name": "Curry Leaf, Hilton Colombo",
+                "location": "Colombo"
+            },
+            {
+                "name": "Upali's",
+                "location": "Colombo"
+            }
+        ]
+    },
+    {
+        "id": "seeni-sambol",
+        "name": "Seeni Sambol",
+        "region": [
+            "all"
+        ],
+        "category": "check_with_restaurant",
+        "ingredients": [
+            "caramelized onion",
+            "sugar",
+            "tamarind",
+            "chili",
+            "dried Maldive fish (traditional)"
+        ],
+        "dietary_tags": {
+            "vegetarian": "check_with_restaurant",
+            "vegan": "check_with_restaurant",
+            "contains_fish": true,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "Traditionally includes dried fish; vegetarian versions exist but aren't guaranteed everywhere.",
+        "ask_the_waiter": [
+            "Does your seeni sambol contain dried fish?",
+            "Do you have a vegetarian version?"
+        ],
+        "restaurants": [
+            {
+                "name": "Perera and Sons",
+                "location": "Colombo (bakery/short eats)"
+            }
+        ]
+    },
+    {
+        "id": "plain-hoppers",
+        "name": "Plain Hoppers (Appa)",
+        "region": [
+            "all"
+        ],
+        "category": "vegan",
+        "ingredients": [
+            "rice flour",
+            "coconut milk",
+            "yeast"
+        ],
+        "dietary_tags": {
+            "vegetarian": true,
+            "vegan": true,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "The bowl-shaped pancake itself is vegan; only toppings/fillings vary.",
+        "ask_the_waiter": [],
+        "restaurants": [
+            {
+                "name": "Curry Leaf, Hilton Colombo",
+                "location": "Colombo"
+            }
+        ]
+    },
+    {
+        "id": "egg-hoppers",
+        "name": "Egg Hoppers",
+        "region": [
+            "all"
+        ],
+        "category": "non_vegetarian",
+        "ingredients": [
+            "rice flour",
+            "coconut milk",
+            "egg"
+        ],
+        "dietary_tags": {
+            "vegetarian": true,
+            "vegan": false,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": true,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "Vegetarian-friendly but not vegan due to the egg cracked into the center.",
+        "ask_the_waiter": [],
+        "restaurants": [
+            {
+                "name": "Upali's",
+                "location": "Colombo"
+            }
+        ]
+    },
+    {
+        "id": "milk-hoppers",
+        "name": "Milk Hoppers",
+        "region": [
+            "Jaffna",
+            "Colombo"
+        ],
+        "category": "vegan",
+        "ingredients": [
+            "rice flour",
+            "coconut milk",
+            "sugar"
+        ],
+        "dietary_tags": {
+            "vegetarian": true,
+            "vegan": true,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "Uses coconut milk, not dairy milk, despite the name — typically vegan.",
+        "ask_the_waiter": [
+            "Is this made with coconut milk or dairy milk?"
+        ],
+        "restaurants": [
+            {
+                "name": "Palmyrah Restaurant, Renuka Hotel",
+                "location": "Colombo"
+            }
+        ]
+    },
+    {
+        "id": "string-hoppers",
+        "name": "String Hoppers (Idiyappam)",
+        "region": [
+            "all"
+        ],
+        "category": "vegan",
+        "ingredients": [
+            "rice flour",
+            "water"
+        ],
+        "dietary_tags": {
+            "vegetarian": true,
+            "vegan": true,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "Steamed rice noodle nests, vegan on their own — check curry accompaniments separately.",
+        "ask_the_waiter": [],
+        "restaurants": [
+            {
+                "name": "Curry Pot",
+                "location": "Colombo"
+            }
+        ]
+    },
+    {
+        "id": "pittu",
+        "name": "Pittu",
+        "region": [
+            "Jaffna",
+            "hill country"
+        ],
+        "category": "check_with_restaurant",
+        "ingredients": [
+            "rice flour",
+            "grated coconut",
+            "sometimes ghee"
+        ],
+        "dietary_tags": {
+            "vegetarian": true,
+            "vegan": "check_with_restaurant",
+            "contains_fish": false,
+            "contains_dairy": "check_with_restaurant",
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "Usually vegan, but some versions use ghee for extra richness.",
+        "ask_the_waiter": [
+            "Is ghee used in the pittu?"
+        ],
+        "restaurants": [
+            {
+                "name": "Palmyrah Restaurant, Renuka Hotel",
+                "location": "Colombo"
+            }
+        ]
+    },
+    {
+        "id": "kottu-vegetable",
+        "name": "Vegetable Kottu Roti",
+        "region": [
+            "all"
+        ],
+        "category": "check_with_restaurant",
+        "ingredients": [
+            "gothamba roti",
+            "mixed vegetables",
+            "spices",
+            "sometimes egg"
+        ],
+        "dietary_tags": {
+            "vegetarian": true,
+            "vegan": "check_with_restaurant",
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": "check_with_restaurant",
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "Often cooked with egg mixed in, even in the 'vegetable' version, unless requested otherwise.",
+        "ask_the_waiter": [
+            "Can this be made without egg?",
+            "Is the roti flatbread itself egg-free?"
+        ],
+        "restaurants": [
+            {
+                "name": "Pillawoos",
+                "location": "Colombo"
+            }
+        ]
+    },
+    {
+        "id": "kottu-chicken",
+        "name": "Chicken Kottu Roti",
+        "region": [
+            "all"
+        ],
+        "category": "non_vegetarian",
+        "ingredients": [
+            "gothamba roti",
+            "chicken",
+            "egg",
+            "spices",
+            "vegetables"
+        ],
+        "dietary_tags": {
+            "vegetarian": false,
+            "vegan": false,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": true,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "A street-food classic across the island.",
+        "ask_the_waiter": [],
+        "restaurants": [
+            {
+                "name": "Pillawoos",
+                "location": "Colombo"
+            }
+        ]
+    },
+    {
+        "id": "jaffna-crab-curry",
+        "name": "Jaffna Crab Curry",
+        "region": [
+            "Jaffna"
+        ],
+        "category": "non_vegetarian",
+        "ingredients": [
+            "crab",
+            "Jaffna curry powder",
+            "coconut milk",
+            "chili"
+        ],
+        "dietary_tags": {
+            "vegetarian": false,
+            "vegan": false,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": true
+        },
+        "notes": "A signature Jaffna dish, contains shellfish.",
+        "ask_the_waiter": [],
+        "restaurants": [
+            {
+                "name": "Palmyrah Restaurant, Renuka Hotel",
+                "location": "Colombo"
+            },
+            {
+                "name": "Local wayside kadés",
+                "location": "Jaffna town"
+            }
+        ]
+    },
+    {
+        "id": "jaffna-mutton-curry",
+        "name": "Jaffna Mutton Curry",
+        "region": [
+            "Jaffna"
+        ],
+        "category": "non_vegetarian",
+        "ingredients": [
+            "mutton",
+            "Jaffna curry powder",
+            "coconut milk"
+        ],
+        "dietary_tags": {
+            "vegetarian": false,
+            "vegan": false,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "Spicier and drier than southern-style curries, distinct Jaffna spice blend.",
+        "ask_the_waiter": [],
+        "restaurants": [
+            {
+                "name": "The Kandy House",
+                "location": "Kandy"
+            },
+            {
+                "name": "Palmyrah Restaurant, Renuka Hotel",
+                "location": "Colombo"
+            }
+        ]
+    },
+    {
+        "id": "fish-ambul-thiyal",
+        "name": "Fish Ambul Thiyal (Sour Fish Curry)",
+        "region": [
+            "southern coast"
+        ],
+        "category": "non_vegetarian",
+        "ingredients": [
+            "fish (usually tuna)",
+            "goraka (sour fruit)",
+            "black pepper",
+            "spices"
+        ],
+        "dietary_tags": {
+            "vegetarian": false,
+            "vegan": false,
+            "contains_fish": true,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "A dry, tangy fish curry from the southern coastal region.",
+        "ask_the_waiter": [],
+        "restaurants": [
+            {
+                "name": "Curry Leaf",
+                "location": "Negombo"
+            }
+        ]
+    },
+    {
+        "id": "prawn-curry",
+        "name": "Prawn Curry",
+        "region": [
+            "coastal"
+        ],
+        "category": "non_vegetarian",
+        "ingredients": [
+            "prawns",
+            "coconut milk",
+            "curry powder",
+            "chili"
+        ],
+        "dietary_tags": {
+            "vegetarian": false,
+            "vegan": false,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": true
+        },
+        "notes": "Common in coastal towns; contains shellfish.",
+        "ask_the_waiter": [],
+        "restaurants": [
+            {
+                "name": "Curry Leaf",
+                "location": "Negombo"
+            }
+        ]
+    },
+    {
+        "id": "black-pork-curry",
+        "name": "Black Pork Curry",
+        "region": [
+            "hill country"
+        ],
+        "category": "non_vegetarian",
+        "ingredients": [
+            "pork",
+            "roasted curry powder",
+            "vinegar",
+            "spices"
+        ],
+        "dietary_tags": {
+            "vegetarian": false,
+            "vegan": false,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "A hill-country specialty with a distinctive dark roasted-spice flavor.",
+        "ask_the_waiter": [],
+        "restaurants": [
+            {
+                "name": "The Kandy House",
+                "location": "Kandy"
+            }
+        ]
+    },
+    {
+        "id": "lamprais",
+        "name": "Lamprais",
+        "region": [
+            "Colombo",
+            "Dutch Burgher tradition"
+        ],
+        "category": "non_vegetarian",
+        "ingredients": [
+            "rice",
+            "mixed meat curry",
+            "frikkadels (meatballs)",
+            "brinjal pahi",
+            "banana leaf"
+        ],
+        "dietary_tags": {
+            "vegetarian": false,
+            "vegan": false,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "A Dutch Burgher dish — rice and mixed meat curries wrapped and baked in banana leaf.",
+        "ask_the_waiter": [],
+        "restaurants": [
+            {
+                "name": "Dutch Burgher Union",
+                "location": "Colombo"
+            }
+        ]
+    },
+    {
+        "id": "malu-paan",
+        "name": "Malu Paan (Fish Bun)",
+        "region": [
+            "all"
+        ],
+        "category": "non_vegetarian",
+        "ingredients": [
+            "bread dough",
+            "spiced fish filling"
+        ],
+        "dietary_tags": {
+            "vegetarian": false,
+            "vegan": false,
+            "contains_fish": true,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "A popular savory bakery snack with a spiced fish filling.",
+        "ask_the_waiter": [],
+        "restaurants": [
+            {
+                "name": "Kandy Bake House",
+                "location": "Kandy"
+            },
+            {
+                "name": "Perera and Sons",
+                "location": "Colombo"
+            }
+        ]
+    },
+    {
+        "id": "egg-cutlets",
+        "name": "Egg Cutlets",
+        "region": [
+            "all"
+        ],
+        "category": "check_with_restaurant",
+        "ingredients": [
+            "hard-boiled egg",
+            "mashed potato or fish/meat filling",
+            "breadcrumbs"
+        ],
+        "dietary_tags": {
+            "vegetarian": "check_with_restaurant",
+            "vegan": false,
+            "contains_fish": "check_with_restaurant",
+            "contains_dairy": false,
+            "contains_egg": true,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "Some versions are potato-and-egg only (vegetarian); others include a fish or meat filling around the egg.",
+        "ask_the_waiter": [
+            "Is this filled with just potato, or does it also have fish or meat?"
+        ],
+        "restaurants": [
+            {
+                "name": "Perera and Sons",
+                "location": "Colombo"
+            }
+        ]
+    },
+    {
+        "id": "wattalappam",
+        "name": "Wattalappam",
+        "region": [
+            "all"
+        ],
+        "category": "vegetarian_not_vegan",
+        "ingredients": [
+            "jaggery",
+            "coconut milk",
+            "egg",
+            "cardamom",
+            "cashew"
+        ],
+        "dietary_tags": {
+            "vegetarian": true,
+            "vegan": false,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": true,
+            "contains_nuts": true,
+            "contains_shellfish": false
+        },
+        "notes": "A steamed coconut-jaggery custard dessert — contains egg and often cashew.",
+        "ask_the_waiter": [
+            "Does this contain cashew or other nuts?"
+        ],
+        "restaurants": [
+            {
+                "name": "Culture Colombo",
+                "location": "Colombo"
+            }
+        ]
+    },
+    {
+        "id": "kiribath",
+        "name": "Kiribath (Milk Rice)",
+        "region": [
+            "all"
+        ],
+        "category": "vegan",
+        "ingredients": [
+            "rice",
+            "coconut milk"
+        ],
+        "dietary_tags": {
+            "vegetarian": true,
+            "vegan": true,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "Made with coconut milk, not dairy — typically vegan, often eaten with lunu miris or seeni sambol (check those separately).",
+        "ask_the_waiter": [],
+        "restaurants": [
+            {
+                "name": "Barefoot Cafe",
+                "location": "Colombo"
+            }
+        ]
+    },
+    {
+        "id": "curd-and-treacle",
+        "name": "Curd and Treacle",
+        "region": [
+            "all"
+        ],
+        "category": "vegetarian_not_vegan",
+        "ingredients": [
+            "buffalo curd (dairy)",
+            "kithul treacle"
+        ],
+        "dietary_tags": {
+            "vegetarian": true,
+            "vegan": false,
+            "contains_fish": false,
+            "contains_dairy": true,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "A classic dessert — curd is dairy-based, so not suitable for vegans.",
+        "ask_the_waiter": [],
+        "restaurants": [
+            {
+                "name": "Culture Colombo",
+                "location": "Colombo"
+            }
+        ]
+    },
+    {
+        "id": "isso-wade",
+        "name": "Isso Wade (Prawn Fritters)",
+        "region": [
+            "coastal",
+            "Colombo"
+        ],
+        "category": "non_vegetarian",
+        "ingredients": [
+            "lentil batter",
+            "whole prawn"
+        ],
+        "dietary_tags": {
+            "vegetarian": false,
+            "vegan": false,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": true
+        },
+        "notes": "A popular beachside snack topped with a whole prawn — contains shellfish.",
+        "ask_the_waiter": [],
+        "restaurants": [
+            {
+                "name": "Galle Face Green food stalls",
+                "location": "Colombo"
+            }
+        ]
+    },
+    {
+        "id": "achcharu",
+        "name": "Achcharu (Mixed Pickle)",
+        "region": [
+            "all"
+        ],
+        "category": "vegan",
+        "ingredients": [
+            "mixed fruit or vegetables",
+            "vinegar",
+            "chili",
+            "sugar"
+        ],
+        "dietary_tags": {
+            "vegetarian": true,
+            "vegan": true,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "A tangy-sweet-spicy pickle, generally vegan.",
+        "ask_the_waiter": [],
+        "restaurants": [
+            {
+                "name": "Street vendors islandwide",
+                "location": "all regions"
+            }
+        ]
+    },
+    {
+        "id": "kavum",
+        "name": "Kavum (Oil Cake)",
+        "region": [
+            "all"
+        ],
+        "category": "vegan",
+        "ingredients": [
+            "rice flour",
+            "jaggery",
+            "coconut oil"
+        ],
+        "dietary_tags": {
+            "vegetarian": true,
+            "vegan": true,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "A traditional deep-fried sweet, especially common during festival season — usually vegan.",
+        "ask_the_waiter": [],
+        "restaurants": [
+            {
+                "name": "Local sweet shops islandwide",
+                "location": "all regions"
+            }
+        ]
+    },
+    {
+        "id": "kukul-mas-curry",
+        "name": "Chicken Curry (Kukul Mas)",
+        "region": [
+            "all"
+        ],
+        "category": "non_vegetarian",
+        "ingredients": [
+            "chicken",
+            "roasted curry powder",
+            "coconut milk",
+            "spices"
+        ],
+        "dietary_tags": {
+            "vegetarian": false,
+            "vegan": false,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "A staple Sunday-lunch dish found almost everywhere.",
+        "ask_the_waiter": [],
+        "restaurants": [
+            {
+                "name": "Upali's",
+                "location": "Colombo"
+            }
+        ]
+    },
+    {
+        "id": "beef-curry",
+        "name": "Beef Curry",
+        "region": [
+            "all"
+        ],
+        "category": "non_vegetarian",
+        "ingredients": [
+            "beef",
+            "roasted curry powder",
+            "coconut milk"
+        ],
+        "dietary_tags": {
+            "vegetarian": false,
+            "vegan": false,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "Not offered at every restaurant due to religious/cultural sensitivities — availability varies.",
+        "ask_the_waiter": [
+            "Do you serve beef here?"
+        ],
+        "restaurants": [
+            {
+                "name": "Nuga Gama, Cinnamon Grand",
+                "location": "Colombo"
+            }
+        ]
+    },
+    {
+        "id": "polos-curry",
+        "name": "Polos Curry (Young Jackfruit Curry)",
+        "region": [
+            "all"
+        ],
+        "category": "vegan",
+        "ingredients": [
+            "young green jackfruit",
+            "curry powder",
+            "coconut milk"
+        ],
+        "dietary_tags": {
+            "vegetarian": true,
+            "vegan": true,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "A popular meat-substitute curry due to jackfruit's fibrous texture — reliably vegan.",
+        "ask_the_waiter": [],
+        "restaurants": [
+            {
+                "name": "Barefoot Cafe",
+                "location": "Colombo"
+            }
+        ]
+    },
+    {
+        "id": "kos-curry",
+        "name": "Kos Curry (Ripe Jackfruit Curry)",
+        "region": [
+            "all"
+        ],
+        "category": "vegan",
+        "ingredients": [
+            "ripe jackfruit",
+            "coconut milk",
+            "spices"
+        ],
+        "dietary_tags": {
+            "vegetarian": true,
+            "vegan": true,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "Sweeter than polos curry, made with ripe jackfruit.",
+        "ask_the_waiter": [],
+        "restaurants": [
+            {
+                "name": "Barefoot Cafe",
+                "location": "Colombo"
+            }
+        ]
+    },
+    {
+        "id": "bandakka-curry",
+        "name": "Bandakka Curry (Okra Curry)",
+        "region": [
+            "all"
+        ],
+        "category": "vegan",
+        "ingredients": [
+            "okra",
+            "coconut milk",
+            "mustard seeds",
+            "curry leaves"
+        ],
+        "dietary_tags": {
+            "vegetarian": true,
+            "vegan": true,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "A common home-style vegetable curry, reliably vegan.",
+        "ask_the_waiter": [],
+        "restaurants": [
+            {
+                "name": "Curry Pot",
+                "location": "Colombo"
+            }
+        ]
+    },
+    {
+        "id": "vambotu-moju",
+        "name": "Vambotu Moju (Eggplant Pickle)",
+        "region": [
+            "all"
+        ],
+        "category": "vegan",
+        "ingredients": [
+            "eggplant",
+            "vinegar",
+            "mustard",
+            "sugar",
+            "chili"
+        ],
+        "dietary_tags": {
+            "vegetarian": true,
+            "vegan": true,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "A sweet-sour fried eggplant pickle, usually vegan.",
+        "ask_the_waiter": [],
+        "restaurants": [
+            {
+                "name": "Curry Pot",
+                "location": "Colombo"
+            }
+        ]
+    },
+    {
+        "id": "mallum",
+        "name": "Mallum (Kola Kanda Greens)",
+        "region": [
+            "all"
+        ],
+        "category": "vegan",
+        "ingredients": [
+            "shredded greens",
+            "grated coconut",
+            "turmeric",
+            "onion"
+        ],
+        "dietary_tags": {
+            "vegetarian": true,
+            "vegan": true,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "Shredded leafy greens tempered with coconut, a common rice-and-curry side.",
+        "ask_the_waiter": [],
+        "restaurants": [
+            {
+                "name": "Upali's",
+                "location": "Colombo"
+            }
+        ]
+    },
+    {
+        "id": "cashew-curry",
+        "name": "Cashew Curry",
+        "region": [
+            "hill country"
+        ],
+        "category": "vegan",
+        "ingredients": [
+            "cashew nuts",
+            "coconut milk",
+            "curry powder"
+        ],
+        "dietary_tags": {
+            "vegetarian": true,
+            "vegan": true,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": true,
+            "contains_shellfish": false
+        },
+        "notes": "Vegan, but a definite nut-allergy risk.",
+        "ask_the_waiter": [
+            "Is this cooked with any other nuts besides cashew?"
+        ],
+        "restaurants": [
+            {
+                "name": "The Kandy House",
+                "location": "Kandy"
+            }
+        ]
+    },
+    {
+        "id": "ala-thel-dala",
+        "name": "Ala Thel Dala (Tempered Fried Potato)",
+        "region": [
+            "all"
+        ],
+        "category": "vegan",
+        "ingredients": [
+            "potato",
+            "mustard seeds",
+            "curry leaves",
+            "chili"
+        ],
+        "dietary_tags": {
+            "vegetarian": true,
+            "vegan": true,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "Dry-fried spiced potatoes, a common vegan side.",
+        "ask_the_waiter": [],
+        "restaurants": [
+            {
+                "name": "Curry Pot",
+                "location": "Colombo"
+            }
+        ]
+    },
+    {
+        "id": "dhal-vadai",
+        "name": "Dhal Vadai (Lentil Fritters)",
+        "region": [
+            "Jaffna",
+            "Colombo"
+        ],
+        "category": "vegan",
+        "ingredients": [
+            "split lentils",
+            "onion",
+            "chili",
+            "curry leaves"
+        ],
+        "dietary_tags": {
+            "vegetarian": true,
+            "vegan": true,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "A crunchy fried snack, common in Tamil Hindu communities and often sold as street food.",
+        "ask_the_waiter": [],
+        "restaurants": [
+            {
+                "name": "Sea Street area eateries, Wellawatte",
+                "location": "Colombo"
+            }
+        ]
+    },
+    {
+        "id": "ulundu-vadai",
+        "name": "Ulundu Vadai (Urad Dal Fritters)",
+        "region": [
+            "Jaffna",
+            "Colombo"
+        ],
+        "category": "vegan",
+        "ingredients": [
+            "urad dal",
+            "onion",
+            "curry leaves",
+            "pepper"
+        ],
+        "dietary_tags": {
+            "vegetarian": true,
+            "vegan": true,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "A doughnut-shaped savory fritter, popular in South Indian-influenced areas.",
+        "ask_the_waiter": [],
+        "restaurants": [
+            {
+                "name": "Sea Street area eateries, Wellawatte",
+                "location": "Colombo"
+            }
+        ]
+    },
+    {
+        "id": "thosai",
+        "name": "Thosai (Dosa)",
+        "region": [
+            "Jaffna",
+            "Colombo"
+        ],
+        "category": "vegan",
+        "ingredients": [
+            "fermented rice and lentil batter"
+        ],
+        "dietary_tags": {
+            "vegetarian": true,
+            "vegan": true,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "A thin fermented crepe, common in Tamil-influenced areas — usually vegan, check accompanying chutneys/sambar for dairy.",
+        "ask_the_waiter": [
+            "Is the coconut chutney or sambar dairy-free?"
+        ],
+        "restaurants": [
+            {
+                "name": "Sea Street area eateries, Wellawatte",
+                "location": "Colombo"
+            }
+        ]
+    },
+    {
+        "id": "idli",
+        "name": "Idli",
+        "region": [
+            "Jaffna",
+            "Colombo"
+        ],
+        "category": "vegan",
+        "ingredients": [
+            "fermented rice and lentil batter, steamed"
+        ],
+        "dietary_tags": {
+            "vegetarian": true,
+            "vegan": true,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "Steamed rice cakes, typically vegan on their own.",
+        "ask_the_waiter": [],
+        "restaurants": [
+            {
+                "name": "Sea Street area eateries, Wellawatte",
+                "location": "Colombo"
+            }
+        ]
+    },
+    {
+        "id": "rulang",
+        "name": "Rulang (Semolina Pudding)",
+        "region": [
+            "all"
+        ],
+        "category": "vegetarian_not_vegan",
+        "ingredients": [
+            "semolina",
+            "milk or coconut milk",
+            "ghee",
+            "cashew"
+        ],
+        "dietary_tags": {
+            "vegetarian": true,
+            "vegan": false,
+            "contains_fish": false,
+            "contains_dairy": true,
+            "contains_egg": false,
+            "contains_nuts": true,
+            "contains_shellfish": false
+        },
+        "notes": "Usually made with ghee and sometimes dairy milk — not vegan by default.",
+        "ask_the_waiter": [
+            "Is this made with dairy milk or coconut milk?"
+        ],
+        "restaurants": [
+            {
+                "name": "Kandy Bake House",
+                "location": "Kandy"
+            }
+        ]
+    },
+    {
+        "id": "bibikkan",
+        "name": "Bibikkan (Coconut Cake)",
+        "region": [
+            "all"
+        ],
+        "category": "vegetarian_not_vegan",
+        "ingredients": [
+            "semolina",
+            "coconut",
+            "jaggery",
+            "egg",
+            "spices"
+        ],
+        "dietary_tags": {
+            "vegetarian": true,
+            "vegan": false,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": true,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "A dense spiced coconut cake, contains egg.",
+        "ask_the_waiter": [],
+        "restaurants": [
+            {
+                "name": "Kandy Bake House",
+                "location": "Kandy"
+            }
+        ]
+    },
+    {
+        "id": "aluwa",
+        "name": "Aluwa",
+        "region": [
+            "all"
+        ],
+        "category": "vegan",
+        "ingredients": [
+            "rice flour",
+            "treacle",
+            "cashew"
+        ],
+        "dietary_tags": {
+            "vegetarian": true,
+            "vegan": true,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": true,
+            "contains_shellfish": false
+        },
+        "notes": "A diamond-shaped sweet, vegan but usually contains cashew.",
+        "ask_the_waiter": [
+            "Does this contain cashew?"
+        ],
+        "restaurants": [
+            {
+                "name": "Local sweet shops islandwide",
+                "location": "all regions"
+            }
+        ]
+    },
+    {
+        "id": "kokis",
+        "name": "Kokis",
+        "region": [
+            "all"
+        ],
+        "category": "vegan",
+        "ingredients": [
+            "rice flour",
+            "coconut milk",
+            "turmeric"
+        ],
+        "dietary_tags": {
+            "vegetarian": true,
+            "vegan": true,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "A crispy deep-fried festival sweet, usually vegan.",
+        "ask_the_waiter": [],
+        "restaurants": [
+            {
+                "name": "Local sweet shops islandwide",
+                "location": "all regions"
+            }
+        ]
+    },
+    {
+        "id": "dodol",
+        "name": "Dodol",
+        "region": [
+            "all"
+        ],
+        "category": "vegan",
+        "ingredients": [
+            "rice flour",
+            "jaggery",
+            "coconut milk"
+        ],
+        "dietary_tags": {
+            "vegetarian": true,
+            "vegan": true,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "A chewy coconut-jaggery sweet, usually vegan.",
+        "ask_the_waiter": [],
+        "restaurants": [
+            {
+                "name": "Local sweet shops islandwide",
+                "location": "all regions"
+            }
+        ]
+    },
+    {
+        "id": "thala-guli",
+        "name": "Thala Guli (Sesame Balls)",
+        "region": [
+            "all"
+        ],
+        "category": "vegan",
+        "ingredients": [
+            "sesame seeds",
+            "jaggery"
+        ],
+        "dietary_tags": {
+            "vegetarian": true,
+            "vegan": true,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "A simple sesame-jaggery sweet, reliably vegan.",
+        "ask_the_waiter": [],
+        "restaurants": [
+            {
+                "name": "Local sweet shops islandwide",
+                "location": "all regions"
+            }
+        ]
+    },
+    {
+        "id": "fish-vadai",
+        "name": "Fish Vadai (Fish Fritters)",
+        "region": [
+            "coastal",
+            "Jaffna"
+        ],
+        "category": "non_vegetarian",
+        "ingredients": [
+            "lentil batter",
+            "shredded fish",
+            "spices"
+        ],
+        "dietary_tags": {
+            "vegetarian": false,
+            "vegan": false,
+            "contains_fish": true,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "Different from plain lentil vadai — this version has fish mixed into the batter.",
+        "ask_the_waiter": [
+            "Is this the plain lentil vadai or the fish version?"
+        ],
+        "restaurants": [
+            {
+                "name": "Galle Face Green food stalls",
+                "location": "Colombo"
+            }
+        ]
+    },
+    {
+        "id": "cuttlefish-curry",
+        "name": "Cuttlefish Curry",
+        "region": [
+            "coastal"
+        ],
+        "category": "non_vegetarian",
+        "ingredients": [
+            "cuttlefish",
+            "coconut milk",
+            "curry powder"
+        ],
+        "dietary_tags": {
+            "vegetarian": false,
+            "vegan": false,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": true
+        },
+        "notes": "A coastal specialty, classified with shellfish/mollusk allergens.",
+        "ask_the_waiter": [],
+        "restaurants": [
+            {
+                "name": "Curry Leaf",
+                "location": "Negombo"
+            }
+        ]
+    },
+    {
+        "id": "devilled-chicken",
+        "name": "Devilled Chicken",
+        "region": [
+            "all"
+        ],
+        "category": "non_vegetarian",
+        "ingredients": [
+            "chicken",
+            "bell pepper",
+            "onion",
+            "soy sauce",
+            "chili"
+        ],
+        "dietary_tags": {
+            "vegetarian": false,
+            "vegan": false,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "A Chinese-Sri Lankan fusion dish, spicy stir-fried style.",
+        "ask_the_waiter": [],
+        "restaurants": [
+            {
+                "name": "The Barnesbury",
+                "location": "Colombo"
+            }
+        ]
+    },
+    {
+        "id": "devilled-prawns",
+        "name": "Devilled Prawns",
+        "region": [
+            "coastal",
+            "Colombo"
+        ],
+        "category": "non_vegetarian",
+        "ingredients": [
+            "prawns",
+            "bell pepper",
+            "onion",
+            "chili",
+            "soy sauce"
+        ],
+        "dietary_tags": {
+            "vegetarian": false,
+            "vegan": false,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": true
+        },
+        "notes": "Fusion-style dish, contains shellfish.",
+        "ask_the_waiter": [],
+        "restaurants": [
+            {
+                "name": "The Barnesbury",
+                "location": "Colombo"
+            }
+        ]
+    },
+    {
+        "id": "chicken-65",
+        "name": "Chicken 65",
+        "region": [
+            "Colombo"
+        ],
+        "category": "non_vegetarian",
+        "ingredients": [
+            "chicken",
+            "chili",
+            "curry leaves",
+            "spices",
+            "batter"
+        ],
+        "dietary_tags": {
+            "vegetarian": false,
+            "vegan": false,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": "check_with_restaurant",
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "South Indian-origin spicy fried chicken, popular in Colombo's Tamil food scene — batter may contain egg depending on the recipe.",
+        "ask_the_waiter": [
+            "Does the batter contain egg?"
+        ],
+        "restaurants": [
+            {
+                "name": "Sea Street area eateries, Wellawatte",
+                "location": "Colombo"
+            }
+        ]
+    },
+    {
+        "id": "cheese-kottu",
+        "name": "Cheese Kottu",
+        "region": [
+            "all"
+        ],
+        "category": "check_with_restaurant",
+        "ingredients": [
+            "gothamba roti",
+            "cheese",
+            "egg",
+            "vegetables",
+            "optional meat"
+        ],
+        "dietary_tags": {
+            "vegetarian": "check_with_restaurant",
+            "vegan": false,
+            "contains_fish": false,
+            "contains_dairy": true,
+            "contains_egg": true,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "A modern variation of kottu with melted cheese — can be made with or without meat.",
+        "ask_the_waiter": [
+            "Can this be made without meat?",
+            "What kind of cheese is used?"
+        ],
+        "restaurants": [
+            {
+                "name": "Pillawoos",
+                "location": "Colombo"
+            }
+        ]
+    },
+    {
+        "id": "chicken-biryani",
+        "name": "Chicken Biryani",
+        "region": [
+            "Colombo"
+        ],
+        "category": "non_vegetarian",
+        "ingredients": [
+            "basmati rice",
+            "chicken",
+            "spices",
+            "yoghurt",
+            "fried onion"
+        ],
+        "dietary_tags": {
+            "vegetarian": false,
+            "vegan": false,
+            "contains_fish": false,
+            "contains_dairy": true,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "Popular across Colombo's many biryani spots, often served with a boiled egg on top.",
+        "ask_the_waiter": [
+            "Does this come with a boiled egg?"
+        ],
+        "restaurants": [
+            {
+                "name": "Various Colombo biryani restaurants",
+                "location": "Colombo"
+            }
+        ]
+    },
+    {
+        "id": "vegetable-fried-rice",
+        "name": "Vegetable Fried Rice",
+        "region": [
+            "all"
+        ],
+        "category": "check_with_restaurant",
+        "ingredients": [
+            "rice",
+            "mixed vegetables",
+            "soy sauce",
+            "sometimes egg"
+        ],
+        "dietary_tags": {
+            "vegetarian": true,
+            "vegan": "check_with_restaurant",
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": "check_with_restaurant",
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "Often cooked with egg mixed through, even when labeled 'vegetable' only.",
+        "ask_the_waiter": [
+            "Is this made without egg?"
+        ],
+        "restaurants": [
+            {
+                "name": "Nuga Gama, Cinnamon Grand",
+                "location": "Colombo"
+            }
+        ]
+    },
+    {
+        "id": "egg-fried-rice",
+        "name": "Egg Fried Rice",
+        "region": [
+            "all"
+        ],
+        "category": "vegetarian_not_vegan",
+        "ingredients": [
+            "rice",
+            "egg",
+            "soy sauce",
+            "spring onion"
+        ],
+        "dietary_tags": {
+            "vegetarian": true,
+            "vegan": false,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": true,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "A Chinese-Sri Lankan fusion staple.",
+        "ask_the_waiter": [],
+        "restaurants": [
+            {
+                "name": "Nuga Gama, Cinnamon Grand",
+                "location": "Colombo"
+            }
+        ]
+    },
+    {
+        "id": "thambili",
+        "name": "Thambili (King Coconut Water)",
+        "region": [
+            "all"
+        ],
+        "category": "vegan",
+        "ingredients": [
+            "king coconut water"
+        ],
+        "dietary_tags": {
+            "vegetarian": true,
+            "vegan": true,
+            "contains_fish": false,
+            "contains_dairy": false,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "Fresh coconut water straight from the shell, sold roadside islandwide — naturally vegan.",
+        "ask_the_waiter": [],
+        "restaurants": [
+            {
+                "name": "Roadside vendors islandwide",
+                "location": "all regions"
+            }
+        ]
+    },
+    {
+        "id": "faluda",
+        "name": "Faluda",
+        "region": [
+            "Colombo"
+        ],
+        "category": "vegetarian_not_vegan",
+        "ingredients": [
+            "milk",
+            "rose syrup",
+            "basil seeds",
+            "ice cream",
+            "vermicelli"
+        ],
+        "dietary_tags": {
+            "vegetarian": true,
+            "vegan": false,
+            "contains_fish": false,
+            "contains_dairy": true,
+            "contains_egg": false,
+            "contains_nuts": false,
+            "contains_shellfish": false
+        },
+        "notes": "A layered milk-based dessert drink, not suitable for vegans.",
+        "ask_the_waiter": [],
+        "restaurants": [
+            {
+                "name": "Sea Street area eateries, Wellawatte",
+                "location": "Colombo"
+            }
+        ]
+    }
+]
