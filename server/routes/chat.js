@@ -35,6 +35,21 @@ const provinceToRegion = {
     'uva': 'hill country',
     'sabaragamuwa': 'all'
 };
+// To handle the greetings 
+
+const greetings = ['hi', 'hello', 'hey', 'hi there', 'good morning', 'good evening', 'yo', 'hiya'];
+
+function isGreeting(message) {
+    const cleaned = message.toLowerCase().trim().replace(/[!.?]/g, '');
+    return greetings.includes(cleaned);
+}
+
+const gratitude = ['thankyou', 'thanks', 'thank you', 'bye', 'thx', 'ty', 'thanks a lot', 'thank you so much', 'appreciate it'];
+
+function isGratitude(message) {
+    const cleaned = message.toLowerCase().trim().replace(/[!.?]/g, '');
+    return gratitude.includes(cleaned);
+}
 
 // Flatten into a single town -> province lookup for fast matching
 const townToProvince = Object.fromEntries(
@@ -88,7 +103,22 @@ function findRelevantDishes(message) {
         return dishes.filter(d => d.region.includes(region) || d.region.includes('all'));
     }
 
-    // 5. No match at all
+    // 5. Generic keyword fallback — search name, notes, and ingredients for content words
+    const stopWords = ['give', 'some', 'information', 'about', 'tell', 'what', 'which', 'sri', 'lankan', 'me', 'the'];
+    const significantWords = lowerMsg.split(/\s+/).filter(w => w.length > 3 && !stopWords.includes(w));
+
+    if (significantWords.length > 0) {
+        const keywordMatches = dishes.filter(d => {
+            const haystack = `${d.name} ${d.notes} ${d.ingredients.join(' ')}`.toLowerCase();
+            return significantWords.some(word => {
+                const stem = (word.endsWith('s') && word.length > 4) ? word.slice(0, -1) : word;
+                return haystack.includes(word) || haystack.includes(stem);
+            });
+        }).slice(0, 10);
+        if (keywordMatches.length > 0) return keywordMatches;
+    }
+
+    // 6. No match at all
     return [];
 }
 
@@ -98,6 +128,26 @@ router.post('/', async (req, res) => {
 
         if (!message) {
             return res.status(400).json({ error: 'Message is required' });
+        }
+
+        if (isGreeting(message)) {
+            return res.json({
+                reply: "Hi! I'm your Sri Lankan food guide 🍛 Ask me about any dish, dietary restrictions, or what's popular in a specific region.",
+                safety: null,
+                tags: [],
+                ask_the_waiter: [],
+                matched: true
+            });
+        }
+
+        if (isGratitude(message)) {
+            return res.json({
+                reply: "You're welcome! Enjoy your food adventure in Sri Lanka 🌴 Feel free to ask about any other dish.",
+                safety: null,
+                tags: [],
+                ask_the_waiter: [],
+                matched: true
+            });
         }
 
         const matchedDishes = findRelevantDishes(message);
