@@ -1,6 +1,10 @@
 import SafetyBadge from './SafetyBadge';
 import AskWaiterTip from './AskWaiter';
 
+// Renders one chat message. User messages are plain text; assistant
+// messages additionally render a SafetyBadge and AskWaiterTip based on
+// the backend's structured response.
+
 function MessageBubble({ message }) {
     const isUser = message.role === 'user';
 

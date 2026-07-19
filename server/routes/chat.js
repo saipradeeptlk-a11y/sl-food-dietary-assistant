@@ -4,6 +4,8 @@ const groq = require('../utils/groqClient');
 const dishes = require('../data/dishes.json');
 const Fuse = require('fuse.js');
 
+// Fuzzy search index over dish names/ids, used as a typo-tolerant fallback
+// when exact matching fails. Score threshold is applied later, not here.
 const fuse = new Fuse(dishes, {
     keys: ['name', 'id'],
     threshold: 0.4,
@@ -35,8 +37,11 @@ const provinceToRegion = {
     'uva': 'hill country',
     'sabaragamuwa': 'all'
 };
-// To handle the greetings 
 
+
+
+// Small talk handling — intercepted before dish matching so greetings/thanks
+// don't get treated as unanswerable food questions
 const greetings = ['hi', 'hello', 'hey', 'hi there', 'good morning', 'good evening', 'yo', 'hiya'];
 
 function isGreeting(message) {
@@ -57,6 +62,11 @@ const townToProvince = Object.fromEntries(
         towns.map(town => [town, province])
     )
 );
+
+
+// Core retrieval logic. Tries strategies in order of confidence and returns
+// as soon as one succeeds. Returns [] if nothing matches — this is what
+// triggers the "don't call Groq" safety branch further down.
 
 function findRelevantDishes(message) {
     const lowerMsg = message.toLowerCase().trim();
@@ -152,7 +162,8 @@ router.post('/', async (req, res) => {
 
         const matchedDishes = findRelevantDishes(message);
 
-        // No match found — short-circuit, do NOT call Groq
+        // No match found — short-circuit, do NOT call Groq. This is the core
+        // safety guarantee: never let the LLM guess on ungrounded questions.
         if (matchedDishes.length === 0) {
             return res.json({
                 reply: "I don't have verified information on that dish or area yet. To be safe, I'd recommend asking your server directly about the ingredients — especially about dried fish, dairy, or nuts.",
@@ -163,6 +174,8 @@ router.post('/', async (req, res) => {
             });
         }
 
+        // Strip fields the LLM doesn't need (e.g. restaurants) to keep the
+        // prompt small and avoid hitting Groq's free-tier token limits.
         const trimmedDishes = matchedDishes.map(d => ({
             name: d.name,
             ingredients: d.ingredients,
@@ -199,6 +212,11 @@ ${JSON.stringify(trimmedDishes, null, 2)}`;
 
         const validSafetyValues = ['safe', 'check_with_restaurant', 'unsafe', 'unknown'];
 
+
+
+        // Groq's JSON mode isn't a strict schema guarantee — validate every
+        // field before trusting it, so malformed output can't crash or
+        // mislead the frontend (e.g. a safety label leaking into `reply`).
         const safeResponse = {
             reply: (typeof parsed.reply === 'string' && !validSafetyValues.includes(parsed.reply.trim()))
                 ? parsed.reply

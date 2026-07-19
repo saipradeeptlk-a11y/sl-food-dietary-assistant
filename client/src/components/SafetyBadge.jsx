@@ -1,3 +1,7 @@
+// Color-coded pill showing dietary safety status. Falls back to the
+// "unknown" style for any unexpected value, so a bad/missing safety
+// field never breaks rendering.
+
 function SafetyBadge({ safety }) {
     const styles = {
         safe: { label: 'Safe', color: '#0F2B1A', bg: '#7FB489' },
