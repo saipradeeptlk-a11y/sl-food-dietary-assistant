@@ -1,12 +1,16 @@
 import { useState, useRef, useEffect } from 'react';
 import MessageBubble from './MessageBubble';
 
+// Main chat container: owns the conversation state, talks to the backend,
+// and renders the message list + input bar.
 function ChatWindow() {
     const [messages, setMessages] = useState([]);
     const [input, setInput] = useState('');
     const [loading, setLoading] = useState(false);
     const messagesEndRef = useRef(null);
 
+
+    // Auto-scroll to the newest message whenever the conversation updates.
     const scrollToBottom = () => {
         messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
     };
@@ -18,6 +22,9 @@ function ChatWindow() {
     const sendMessage = async () => {
         if (!input.trim() || loading) return;
 
+
+        // Add the user's message immediately so the UI feels instant,
+        // rather than waiting on the network round trip.
         const userMessage = { role: 'user', text: input };
         setMessages(prev => [...prev, userMessage]);
         setInput('');
