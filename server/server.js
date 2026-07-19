@@ -14,7 +14,9 @@ const PORT = process.env.PORT || 5000;
 // Allows the React frontend (running on a different origin/port) to call
 // this API. In production, this should be restricted to the deployed
 // frontend's URL instead of allowing all origins.
-app.use(cors());
+app.use(cors({
+    origin: ['http://localhost:5173', 'https://slfooddietaryassistant.netlify.app']
+}));
 
 // Parses incoming JSON request bodies, needed for POST /api/chat.
 app.use(express.json());
